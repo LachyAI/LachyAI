@@ -8,8 +8,8 @@ Based in Chiang Mai. Originally from Australia.
 
 - **[LocalROI](https://app.opscorescale.com)** — Multi-tenant dashboard for local service businesses (Next.js + Supabase)
 - **[Demo Site Generator](https://website-demos.opscorescale.com)** — Instant demo websites for sales calls (Next.js + Vercel Blob)
-- **[Content OS](https://github.com/Lachy121996/content-os)** — Instagram competitor tracking + content pipeline
-- **[LifeOS Dashboard](https://github.com/Lachy121996/lifeos-dashboard)** — Personal productivity system with AI coaching
+- **[Content OS](https://github.com/LachyAI/content-os)** — Instagram competitor tracking + content pipeline
+- **[LifeOS Dashboard](https://github.com/LachyAI/lifeos-dashboard)** — Personal productivity system with AI coaching
 
 ## Stack
 
