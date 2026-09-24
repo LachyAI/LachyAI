@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-labelledby="title">
+  <title id="title">20+ products shipped end to end · 17 self-hosted services running in production · 29 scheduled jobs running on cron · 1 operator no engineering team</title>
+  <defs>
+  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D8B4FE"/>
+    <stop offset=".55" stop-color="#C084FC"/>
+    <stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient></defs>
+  <style>
+    .t { animation: rise .7s cubic-bezier(.2,.7,.2,1) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  
+  <g class="t" style="animation-delay:0.00s">
+    <rect x="0.75" y="5" width="286.5" height="140" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <rect x="24" y="5" height="2" width="60" rx="1" fill="url(#ink)">
+      <animate attributeName="width" from="0" to="60" dur=".9s" begin="0.20s" fill="freeze"/>
+    </rect>
+    <text x="264" y="37" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6B7280">01</text>
+    <text x="22" y="85" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-1.5" fill="url(#ink)">20+</text>
+    <text x="24" y="112" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#E5E7EB">products shipped</text>
+    <text x="24" y="132" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">end to end</text>
+  </g>
+  <g class="t" style="animation-delay:0.12s">
+    <rect x="304.75" y="5" width="286.5" height="140" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <rect x="328" y="5" height="2" width="60" rx="1" fill="url(#ink)">
+      <animate attributeName="width" from="0" to="60" dur=".9s" begin="0.32s" fill="freeze"/>
+    </rect>
+    <text x="568" y="37" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6B7280">02</text>
+    <text x="326" y="85" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-1.5" fill="url(#ink)">17</text>
+    <text x="328" y="112" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#E5E7EB">self-hosted services</text>
+    <text x="328" y="132" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">running in production</text>
+  </g>
+  <g class="t" style="animation-delay:0.24s">
+    <rect x="608.75" y="5" width="286.5" height="140" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <rect x="632" y="5" height="2" width="60" rx="1" fill="url(#ink)">
+      <animate attributeName="width" from="0" to="60" dur=".9s" begin="0.44s" fill="freeze"/>
+    </rect>
+    <text x="872" y="37" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6B7280">03</text>
+    <text x="630" y="85" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-1.5" fill="url(#ink)">29</text>
+    <text x="632" y="112" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#E5E7EB">scheduled jobs</text>
+    <text x="632" y="132" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">running on cron</text>
+  </g>
+  <g class="t" style="animation-delay:0.36s">
+    <rect x="912.75" y="5" width="286.5" height="140" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <rect x="936" y="5" height="2" width="60" rx="1" fill="url(#ink)">
+      <animate attributeName="width" from="0" to="60" dur=".9s" begin="0.56s" fill="freeze"/>
+    </rect>
+    <text x="1176" y="37" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6B7280">04</text>
+    <text x="934" y="85" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="800" letter-spacing="-1.5" fill="url(#ink)">1</text>
+    <text x="936" y="112" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#E5E7EB">operator</text>
+    <text x="936" y="132" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">no engineering team</text>
+  </g>
+</svg>

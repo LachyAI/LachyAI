@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="230" viewBox="0 0 600 230" role="img" aria-labelledby="title desc">
+  <title id="title">My AI operating system</title>
+  <desc id="desc">Claude Code with custom skills, hooks, a memory layer and six specialist agents for sales, SEO, copy and ops. It's how everything above gets built.</desc>
+  <defs>
+    
+  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D8B4FE"/>
+    <stop offset=".55" stop-color="#C084FC"/>
+    <stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C084FC" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#C084FC" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#C084FC" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="600" height="230" rx="18"/></clipPath>
+  </defs>
+
+  <rect width="600" height="230" rx="18" fill="#0A0A0B"/>
+  <g clip-path="url(#card)">
+    <circle cx="580" cy="-10" r="240" fill="url(#glow)">
+      <animate attributeName="opacity" values="1;.55;1" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="-200" y="0" width="200" height="1.5" fill="url(#sheen)">
+      <animate attributeName="x" values="-200;600" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x=".75" y=".75" width="598.5" height="228.5" rx="17.25" fill="none" stroke="#26262D" stroke-width="1.5"/>
+
+  <text x="28" y="42" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#C084FC">tooling</text>
+  
+    <rect x="489" y="24" width="87" height="26" rx="13" fill="#111114" stroke="#26262D"/>
+    <circle cx="503" cy="37" r="3.5" fill="#6B7280">
+        <animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
+    <text x="514" y="41.32" textLength="51" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6B7280">private</text>
+  <text x="28" y="84" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="-.4" fill="#FFFFFF">My AI operating system</text>
+  <text x="28" y="114" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9CA3AF">Claude Code with custom skills, hooks, a memory layer and six</text>
+  <text x="28" y="136" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9CA3AF">specialist agents for sales, SEO, copy and ops. It's how everything</text>
+  <text x="28" y="158" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#9CA3AF">above gets built.</text>
+  
+    <rect x="28" y="180" width="102" height="26" rx="13" fill="#16161B" stroke="#26262D"/>
+    
+    <text x="39" y="197.32" textLength="80" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#D8B4FE">Claude Code</text>
+    <rect x="138" y="180" width="44" height="26" rx="13" fill="#16161B" stroke="#26262D"/>
+    
+    <text x="149" y="197.32" textLength="22" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#D8B4FE">MCP</text>
+    <rect x="190" y="180" width="88" height="26" rx="13" fill="#16161B" stroke="#26262D"/>
+    
+    <text x="201" y="197.32" textLength="66" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#D8B4FE">subagents</text>
+    <rect x="286" y="180" width="59" height="26" rx="13" fill="#16161B" stroke="#26262D"/>
+    
+    <text x="297" y="197.32" textLength="37" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#D8B4FE">hooks</text>
+</svg>
