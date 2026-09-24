@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+  <title id="title">The stack behind it</title>
+  <desc id="desc">A self-hosted VPS running Caddy, n8n, LangGraph, Postgres, Redis, Umami, Omi webhook, Dozzle, Diun. Claude Code, headless · 29 cron jobs. Inputs: phone, webhooks, cloudflare. Connected to vercel, neon + supabase, anthropic api, slack.</desc>
+  <defs>
+    
+  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D8B4FE"/>
+    <stop offset=".55" stop-color="#C084FC"/>
+    <stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity=".3"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+    <clipPath id="card"><rect width="1200" height="480" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .s { animation: pop .5s cubic-bezier(.2,.7,.2,1) backwards; }
+    @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <rect width="1200" height="480" rx="18" fill="#0A0A0B"/>
+  <g clip-path="url(#card)">
+    <rect width="1200" height="480" fill="url(#dots)"/>
+    <circle cx="600" cy="264" r="360" fill="url(#glow)"/>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="478.5" rx="17.25" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <text x="32" y="46" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#6B7280">// the stack behind it</text>
+  <text x="1168" y="46" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#6B7280">one person · one VPS · no platform team</text>
+  
+  <path d="M250 154H330" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <path d="M250 154H330" fill="none" stroke="#C084FC" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="#D8B4FE" opacity="0">
+    <animateMotion dur="1.8s" begin="0s" repeatCount="indefinite" path="M250 154H330"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="0s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M250 264H330" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <path d="M250 264H330" fill="none" stroke="#C084FC" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="#D8B4FE" opacity="0">
+    <animateMotion dur="1.8s" begin="0.5s" repeatCount="indefinite" path="M250 264H330"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M250 374H330" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <path d="M250 374H330" fill="none" stroke="#C084FC" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="#D8B4FE" opacity="0">
+    <animateMotion dur="1.8s" begin="1s" repeatCount="indefinite" path="M250 374H330"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M870 130H950" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <path d="M870 130H950" fill="none" stroke="#C084FC" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="#D8B4FE" opacity="0">
+    <animateMotion dur="1.8s" begin="0.9s" repeatCount="indefinite" path="M870 130H950"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M870 219.33333333333331H950" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <path d="M870 219.33333333333331H950" fill="none" stroke="#C084FC" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="#D8B4FE" opacity="0">
+    <animateMotion dur="1.8s" begin="1.3s" repeatCount="indefinite" path="M870 219.33333333333331H950"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="1.3s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M870 308.66666666666663H950" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <path d="M870 308.66666666666663H950" fill="none" stroke="#C084FC" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="#D8B4FE" opacity="0">
+    <animateMotion dur="1.8s" begin="1.7000000000000002s" repeatCount="indefinite" path="M870 308.66666666666663H950"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="1.7000000000000002s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M870 398H950" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <path d="M870 398H950" fill="none" stroke="#C084FC" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="#D8B4FE" opacity="0">
+    <animateMotion dur="1.8s" begin="2.1s" repeatCount="indefinite" path="M870 398H950"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="2.1s" repeatCount="indefinite"/>
+  </circle>
+  <rect x="330" y="84" width="540" height="360" rx="20" fill="#0A0A0B" fill-opacity=".85"/>
+  <rect x="330" y="84" width="540" height="360" rx="20" fill="none" stroke="#C084FC" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="7 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-26" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="360" cy="116" r="4" fill="#C084FC">
+    <animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="374" y="121" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#C084FC">vps · digitalocean · 4 vCPU / 8 GB · docker compose</text>
+  
+  <g class="s" style="animation-delay:0.10s">
+    <rect x="354" y="146" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="370" y="171" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Caddy</text>
+    <text x="370" y="190" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">cdn + tls</text>
+  </g>
+  <g class="s" style="animation-delay:0.16s">
+    <rect x="524" y="146" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="540" y="171" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">n8n</text>
+    <text x="540" y="190" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">workflows</text>
+  </g>
+  <g class="s" style="animation-delay:0.22s">
+    <rect x="694" y="146" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="710" y="171" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">LangGraph</text>
+    <text x="710" y="190" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">agent api</text>
+  </g>
+  <g class="s" style="animation-delay:0.28s">
+    <rect x="354" y="220" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="370" y="245" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Postgres</text>
+    <text x="370" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">data</text>
+  </g>
+  <g class="s" style="animation-delay:0.34s">
+    <rect x="524" y="220" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="540" y="245" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Redis</text>
+    <text x="540" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">queues + cache</text>
+  </g>
+  <g class="s" style="animation-delay:0.40s">
+    <rect x="694" y="220" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="710" y="245" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Umami</text>
+    <text x="710" y="264" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">web analytics</text>
+  </g>
+  <g class="s" style="animation-delay:0.46s">
+    <rect x="354" y="294" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="370" y="319" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Omi webhook</text>
+    <text x="370" y="338" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">voice capture</text>
+  </g>
+  <g class="s" style="animation-delay:0.52s">
+    <rect x="524" y="294" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="540" y="319" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Dozzle</text>
+    <text x="540" y="338" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">live logs</text>
+  </g>
+  <g class="s" style="animation-delay:0.58s">
+    <rect x="694" y="294" width="152" height="58" rx="12" fill="#16161B" stroke="#26262D"/>
+    <text x="710" y="319" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Diun</text>
+    <text x="710" y="338" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">image updates</text>
+  </g>
+  
+  <rect x="354" y="368" width="492" height="50" rx="12" fill="#111114" stroke="url(#ink)"/>
+  <text x="600" y="398" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#D8B4FE">Claude Code, headless · 29 cron jobs</text>
+  
+  <rect x="50" y="124" width="200" height="60" rx="14" fill="#111114" stroke="#26262D"/>
+  <text x="66" y="150" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">phone</text>
+  <text x="66" y="169" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">telegram → claude code</text>
+  <rect x="50" y="234" width="200" height="60" rx="14" fill="#111114" stroke="#26262D"/>
+  <text x="66" y="260" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">webhooks</text>
+  <text x="66" y="279" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">forms, wearables, apps</text>
+  <rect x="50" y="344" width="200" height="60" rx="14" fill="#111114" stroke="#26262D"/>
+  <text x="66" y="370" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">cloudflare</text>
+  <text x="66" y="389" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">dns + email routing</text>
+  
+  <rect x="950" y="100" width="200" height="60" rx="14" fill="#111114" stroke="#26262D"/>
+  <text x="966" y="126" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">vercel</text>
+  <text x="966" y="145" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">next.js apps</text>
+  <rect x="950" y="189.33333333333331" width="200" height="60" rx="14" fill="#111114" stroke="#26262D"/>
+  <text x="966" y="215.33333333333331" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">neon + supabase</text>
+  <text x="966" y="234.33333333333331" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">app databases</text>
+  <rect x="950" y="278.66666666666663" width="200" height="60" rx="14" fill="#111114" stroke="#26262D"/>
+  <text x="966" y="304.66666666666663" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">anthropic api</text>
+  <text x="966" y="323.66666666666663" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">claude models</text>
+  <rect x="950" y="368" width="200" height="60" rx="14" fill="#111114" stroke="#26262D"/>
+  <text x="966" y="394" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">slack</text>
+  <text x="966" y="413" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#9CA3AF">alerts + reports</text>
+</svg>

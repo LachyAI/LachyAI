@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">neofetch: lachy@chiangmai</title>
+  <desc id="desc">Role: Growth Operator. Host: Chiang Mai, Thailand. Origin: Australia. Uptime: 4 years in marketing. Shell: Claude Code. Languages: TypeScript, Python. Packages: 20+ products shipped. Clients: 10 across Thailand + Australia. Previously: $300–400k/yr Amazon ads account. Method: spec → architect → direct → verify. Open to: AI + systems roles, founder-led teams</desc>
+  <defs>
+    <linearGradient id="artInk" gradientUnits="userSpaceOnUse" x1="0" y1="108" x2="0" y2="312">
+      <stop offset="0" stop-color="#D8B4FE"/>
+      <stop offset=".5" stop-color="#C084FC"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="body"><rect y="45" width="1200" height="425" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .r { animation: fade .5s ease-out backwards; }
+    @keyframes fade { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: translateX(0); } }
+  </style>
+  
+  <rect width="1200" height="470" rx="18" fill="#0A0A0B"/>
+  <path d="M18 .75H1182A17.25 17.25 0 0 1 1199.25 18V44H.75V18A17.25 17.25 0 0 1 18 .75Z" fill="#111114"/>
+  <line x1=".75" y1="44" x2="1199.25" y2="44" stroke="#26262D"/>
+  <circle cx="26" cy="22" r="6" fill="#7C3AED"/>
+  <circle cx="46" cy="22" r="6" fill="#A855F7"/>
+  <circle cx="66" cy="22" r="6" fill="#C084FC"/>
+  <text x="600" y="27" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#6B7280">lachy@chiangmai: ~ — neofetch</text>
+  <rect x=".75" y=".75" width="1198.5" height="468.5" rx="17.25" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <g clip-path="url(#body)">
+    <circle cx="200" cy="220" r="260" fill="url(#glow)">
+      <animate attributeName="opacity" values="1;.6;1" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <text x="60" y="132" xml:space="preserve" textLength="317" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" fill="url(#artInk)" style="white-space:pre">██╗      ██████╗██████╗ </text>
+  <text x="60" y="162" xml:space="preserve" textLength="317" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" fill="url(#artInk)" style="white-space:pre">██║     ██╔════╝██╔══██╗</text>
+  <text x="60" y="192" xml:space="preserve" textLength="317" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" fill="url(#artInk)" style="white-space:pre">██║     ██║     ██████╔╝</text>
+  <text x="60" y="222" xml:space="preserve" textLength="317" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" fill="url(#artInk)" style="white-space:pre">██║     ██║     ██╔══██╗</text>
+  <text x="60" y="252" xml:space="preserve" textLength="317" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" fill="url(#artInk)" style="white-space:pre">███████╗╚██████╗██████╔╝</text>
+  <text x="60" y="282" xml:space="preserve" textLength="317" lengthAdjust="spacingAndGlyphs" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="22" fill="url(#artInk)" style="white-space:pre">╚══════╝ ╚═════╝╚═════╝ </text>
+  <text x="60" y="356" textLength="183.6" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC">lachy@chiangmai</tspan><tspan fill="#6B7280">:~$</tspan></text>
+  <rect x="253.79999999999998" y="341" width="10" height="19" rx="1.5" fill="#C084FC">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="470" y="104" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" font-weight="700"><tspan fill="#C084FC">lachy</tspan><tspan fill="#6B7280">@</tspan><tspan fill="#C084FC">chiangmai</tspan></text>
+  <text x="470" y="130" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="18" fill="#26262D">───────────────</text>
+  
+  <text class="r" style="animation-delay:0.15s" x="470" y="156" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Role</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">Growth Operator</tspan></text>
+  <text class="r" style="animation-delay:0.22s" x="470" y="182" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Host</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">Chiang Mai, Thailand</tspan></text>
+  <text class="r" style="animation-delay:0.29s" x="470" y="208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Origin</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">Australia</tspan></text>
+  <text class="r" style="animation-delay:0.36s" x="470" y="234" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Uptime</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">4 years in marketing</tspan></text>
+  <text class="r" style="animation-delay:0.43s" x="470" y="260" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Shell</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">Claude Code</tspan></text>
+  <text class="r" style="animation-delay:0.50s" x="470" y="286" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Languages</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">TypeScript, Python</tspan></text>
+  <text class="r" style="animation-delay:0.57s" x="470" y="312" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Packages</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">20+ products shipped</tspan></text>
+  <text class="r" style="animation-delay:0.64s" x="470" y="338" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Clients</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">10 across Thailand + Australia</tspan></text>
+  <text class="r" style="animation-delay:0.71s" x="470" y="364" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Previously</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">$300–400k/yr Amazon ads account</tspan></text>
+  <text class="r" style="animation-delay:0.78s" x="470" y="390" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Method</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">spec → architect → direct → verify</tspan></text>
+  <text class="r" style="animation-delay:0.85s" x="470" y="416" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="17"><tspan fill="#C084FC" font-weight="700">Open to</tspan><tspan fill="#6B7280">: </tspan><tspan fill="#E5E7EB">AI + systems roles, founder-led teams</tspan></text>
+  <rect x="470" y="438" width="26" height="16" rx="3" fill="#0A0A0B" stroke="#26262D"/><rect x="500" y="438" width="26" height="16" rx="3" fill="#16161B" stroke="#26262D"/><rect x="530" y="438" width="26" height="16" rx="3" fill="#26262D" stroke="#26262D"/><rect x="560" y="438" width="26" height="16" rx="3" fill="#6B7280" stroke="#26262D"/><rect x="590" y="438" width="26" height="16" rx="3" fill="#9CA3AF" stroke="#26262D"/><rect x="620" y="438" width="26" height="16" rx="3" fill="#7C3AED" stroke="#26262D"/><rect x="650" y="438" width="26" height="16" rx="3" fill="#A855F7" stroke="#26262D"/><rect x="680" y="438" width="26" height="16" rx="3" fill="#C084FC" stroke="#26262D"/><rect x="710" y="438" width="26" height="16" rx="3" fill="#D8B4FE" stroke="#26262D"/><rect x="740" y="438" width="26" height="16" rx="3" fill="#FFFFFF" stroke="#26262D"/>
+</svg>

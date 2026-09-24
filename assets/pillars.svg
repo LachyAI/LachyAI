@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="272" viewBox="0 0 1200 272" role="img" aria-labelledby="title desc">
+  <title id="title">Method: Automate, See, Amplify, Scale</title>
+  <desc id="desc">Automate: The repeatable work comes off you and the team. See: You can finally tell which client makes money. Amplify: The team you have handles more, and handles it better. Scale: Growth that does not depend on you selling every deal.</desc>
+  <defs>
+  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D8B4FE"/>
+    <stop offset=".55" stop-color="#C084FC"/>
+    <stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient></defs>
+  <style>
+    .t { animation: rise .7s cubic-bezier(.2,.7,.2,1) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  
+  <g class="t" style="animation-delay:0.00s">
+    <rect x="0.75" y="4" width="277.5" height="264" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <text x="24" y="40" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#6B7280">01</text>
+    <text x="22" y="84" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="url(#ink)">Automate</text>
+    <text x="24" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">The repeatable work comes</text>
+    <text x="24" y="137" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">off you and the team.</text>
+    <text x="24" y="188" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#C084FC">you'll know when:</text>
+    <text x="24" y="208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">A week where the thing still</text>
+    <text x="24" y="225" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">happened and you were not involved</text>
+    <text x="24" y="242" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">in it.</text>
+  </g>
+  <g>
+    <circle cx="293" cy="120" r="13" fill="#0A0A0B" stroke="#C084FC" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values=".25;1;.25" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+    </circle>
+    <text x="293" y="125" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#C084FC">→</text>
+  </g>
+  <g class="t" style="animation-delay:0.12s">
+    <rect x="307.75" y="4" width="277.5" height="264" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <text x="331" y="40" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#6B7280">02</text>
+    <text x="329" y="84" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="url(#ink)">See</text>
+    <text x="331" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">You can finally tell which</text>
+    <text x="331" y="137" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">client makes money.</text>
+    <text x="331" y="188" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#C084FC">you'll know when:</text>
+    <text x="331" y="208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">You change a decision because of a</text>
+    <text x="331" y="225" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">number, not despite one.</text>
+  </g>
+  <g>
+    <circle cx="600" cy="120" r="13" fill="#0A0A0B" stroke="#C084FC" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values=".25;1;.25" dur="3s" begin="0.75s" repeatCount="indefinite"/>
+    </circle>
+    <text x="600" y="125" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#C084FC">→</text>
+  </g>
+  <g class="t" style="animation-delay:0.24s">
+    <rect x="614.75" y="4" width="277.5" height="264" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <text x="638" y="40" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#6B7280">03</text>
+    <text x="636" y="84" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="url(#ink)">Amplify</text>
+    <text x="638" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">The team you have handles</text>
+    <text x="638" y="137" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">more, and handles it better.</text>
+    <text x="638" y="188" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#C084FC">you'll know when:</text>
+    <text x="638" y="208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">Throughput moves without headcount</text>
+    <text x="638" y="225" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">moving.</text>
+  </g>
+  <g>
+    <circle cx="907" cy="120" r="13" fill="#0A0A0B" stroke="#C084FC" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values=".25;1;.25" dur="3s" begin="1.50s" repeatCount="indefinite"/>
+    </circle>
+    <text x="907" y="125" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#C084FC">→</text>
+  </g>
+  <g class="t" style="animation-delay:0.36s">
+    <rect x="921.75" y="4" width="277.5" height="264" rx="16" fill="#0A0A0B" stroke="#26262D" stroke-width="1.5"/>
+    <text x="945" y="40" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="13" fill="#6B7280">04</text>
+    <text x="943" y="84" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-1" fill="url(#ink)">Scale</text>
+    <text x="945" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">Growth that does not depend</text>
+    <text x="945" y="137" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15.5" font-weight="500" fill="#E5E7EB">on you selling every deal.</text>
+    <text x="945" y="188" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#C084FC">you'll know when:</text>
+    <text x="945" y="208" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">Enquiries arrive in a week you did</text>
+    <text x="945" y="225" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11.5" fill="#9CA3AF">no selling.</text>
+  </g>
+</svg>

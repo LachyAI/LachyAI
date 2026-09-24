@@ -3,28 +3,9 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { C, MONO, SANS, esc, ink } from "./brand.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
-
-// LachlanCB brand: purple + black, Inter + JetBrains Mono.
-const C = {
-  bg: "#0A0A0B",
-  surface: "#111114",
-  raised: "#16161B",
-  line: "#26262D",
-  text: "#FFFFFF",
-  soft: "#E5E7EB",
-  muted: "#9CA3AF",
-  dim: "#6B7280",
-  purple: "#C084FC",
-  violet: "#A855F7",
-  deep: "#7C3AED",
-  lilac: "#D8B4FE",
-};
-const MONO = "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace";
-const SANS = "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif";
-
-const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 function write(path, svg) {
   const file = join(root, "assets", path);
@@ -46,14 +27,6 @@ function wrap(text, max) {
   if (cur) lines.push(cur);
   return lines;
 }
-
-// Shared gradient for purple text and borders.
-const ink = (id) => `
-  <linearGradient id="${id}" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="${C.lilac}"/>
-    <stop offset=".55" stop-color="${C.purple}"/>
-    <stop offset="1" stop-color="${C.deep}"/>
-  </linearGradient>`;
 
 // Pill: rounded rect with centred-left text. Width estimated from a mono char width.
 function pill({ x, y, h = 26, text, size = 12, cw = 7.3, fill = C.raised, stroke = C.line, color = C.lilac, dot = null }) {
@@ -324,6 +297,253 @@ function card(c) {
 </svg>`;
 }
 
+// ---------------------------------------------------------------- terminal window frame
+function frame(W, H, title) {
+  return `
+  <rect width="${W}" height="${H}" rx="18" fill="${C.bg}"/>
+  <path d="M18 .75H${W - 18}A17.25 17.25 0 0 1 ${W - 0.75} 18V44H.75V18A17.25 17.25 0 0 1 18 .75Z" fill="${C.surface}"/>
+  <line x1=".75" y1="44" x2="${W - 0.75}" y2="44" stroke="${C.line}"/>
+  <circle cx="26" cy="22" r="6" fill="${C.deep}"/>
+  <circle cx="46" cy="22" r="6" fill="${C.violet}"/>
+  <circle cx="66" cy="22" r="6" fill="${C.purple}"/>
+  <text x="${W / 2}" y="27" text-anchor="middle" font-family="${MONO}" font-size="13" fill="${C.dim}">${esc(title)}</text>
+  <rect x=".75" y=".75" width="${W - 1.5}" height="${H - 1.5}" rx="17.25" fill="none" stroke="${C.line}" stroke-width="1.5"/>`;
+}
+
+// ---------------------------------------------------------------- neofetch
+function neofetch(rows) {
+  const W = 1200, H = 470;
+  const art = [
+    "██╗      ██████╗██████╗ ",
+    "██║     ██╔════╝██╔══██╗",
+    "██║     ██║     ██████╔╝",
+    "██║     ██║     ██╔══██╗",
+    "███████╗╚██████╗██████╔╝",
+    "╚══════╝ ╚═════╝╚═════╝ ",
+  ];
+  const ax = 60, ay = 132, alh = 30, acw = 13.2;
+  const artSvg = art
+    .map(
+      (l, i) =>
+        `<text x="${ax}" y="${ay + i * alh}" xml:space="preserve" textLength="${Math.round(l.length * acw)}" lengthAdjust="spacingAndGlyphs" font-family="${MONO}" font-size="22" fill="url(#artInk)" style="white-space:pre">${esc(l)}</text>`,
+    )
+    .join("\n  ");
+
+  const ix = 470, iy = 104, lh = 26;
+  const info = rows
+    .map(
+      ([k, v], i) => `
+  <text class="r" style="animation-delay:${(0.15 + i * 0.07).toFixed(2)}s" x="${ix}" y="${iy + (i + 2) * lh}" font-family="${MONO}" font-size="17"><tspan fill="${C.purple}" font-weight="700">${esc(k)}</tspan><tspan fill="${C.dim}">: </tspan><tspan fill="${C.soft}">${esc(v)}</tspan></text>`,
+    )
+    .join("");
+  const palette = [C.bg, C.raised, C.line, C.dim, C.muted, C.deep, C.violet, C.purple, C.lilac, C.text]
+    .map((c, i) => `<rect x="${ix + i * 30}" y="${iy + (rows.length + 2) * lh - 4}" width="26" height="16" rx="3" fill="${c}" stroke="${C.line}"/>`)
+    .join("");
+  const promptY = ay + art.length * alh + 44;
+
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc">
+  <title id="title">neofetch: lachy@chiangmai</title>
+  <desc id="desc">${esc(rows.map(([k, v]) => `${k}: ${v}`).join(". "))}</desc>
+  <defs>
+    <linearGradient id="artInk" gradientUnits="userSpaceOnUse" x1="0" y1="${ay - 24}" x2="0" y2="${ay + art.length * alh}">
+      <stop offset="0" stop-color="${C.lilac}"/>
+      <stop offset=".5" stop-color="${C.purple}"/>
+      <stop offset="1" stop-color="${C.deep}"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="${C.deep}" stop-opacity=".28"/>
+      <stop offset="1" stop-color="${C.deep}" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="body"><rect y="45" width="${W}" height="${H - 45}" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .r { animation: fade .5s ease-out backwards; }
+    @keyframes fade { from { opacity: 0; transform: translateX(-6px); } to { opacity: 1; transform: translateX(0); } }
+  </style>
+  ${frame(W, H, "lachy@chiangmai: ~ — neofetch")}
+  <g clip-path="url(#body)">
+    <circle cx="200" cy="220" r="260" fill="url(#glow)">
+      <animate attributeName="opacity" values="1;.6;1" dur="7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  ${artSvg}
+  <text x="${ax}" y="${promptY}" textLength="${18 * 10.2}" font-family="${MONO}" font-size="17"><tspan fill="${C.purple}">lachy@chiangmai</tspan><tspan fill="${C.dim}">:~$</tspan></text>
+  <rect x="${ax + 19 * 10.2}" y="${promptY - 15}" width="10" height="19" rx="1.5" fill="${C.purple}">
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="${ix}" y="${iy}" font-family="${MONO}" font-size="18" font-weight="700"><tspan fill="${C.purple}">lachy</tspan><tspan fill="${C.dim}">@</tspan><tspan fill="${C.purple}">chiangmai</tspan></text>
+  <text x="${ix}" y="${iy + lh}" font-family="${MONO}" font-size="18" fill="${C.line}">${"─".repeat(15)}</text>
+  ${info}
+  ${palette}
+</svg>`;
+}
+
+// ---------------------------------------------------------------- architecture
+function stack({ services, base, left, right }) {
+  const bx = 330, by = 84, bw = 540;
+  const cw = 152, ch = 58, gx = (bw - 48 - cw * 3) / 2, gy = 16;
+  const bh = 62 + Math.ceil(services.length / 3) * (ch + gy) + 50 + 26;
+  const W = 1200, H = by + bh + 36;
+
+  const chips = services
+    .map(([name, sub], i) => {
+      const x = bx + 24 + (i % 3) * (cw + gx);
+      const y = by + 62 + Math.floor(i / 3) * (ch + gy);
+      return `
+  <g class="s" style="animation-delay:${(0.1 + i * 0.06).toFixed(2)}s">
+    <rect x="${x}" y="${y}" width="${cw}" height="${ch}" rx="12" fill="${C.raised}" stroke="${C.line}"/>
+    <text x="${x + 16}" y="${y + 25}" font-family="${SANS}" font-size="15" font-weight="700" fill="${C.text}">${esc(name)}</text>
+    <text x="${x + 16}" y="${y + 44}" font-family="${MONO}" font-size="11" fill="${C.muted}">${esc(sub)}</text>
+  </g>`;
+    })
+    .join("");
+  const rowsUsed = Math.ceil(services.length / 3);
+  const baseY = by + 62 + rowsUsed * (ch + gy);
+  const baseSvg = `
+  <rect x="${bx + 24}" y="${baseY}" width="${bw - 48}" height="50" rx="12" fill="${C.surface}" stroke="url(#ink)"/>
+  <text x="${bx + bw / 2}" y="${baseY + 30}" text-anchor="middle" font-family="${MONO}" font-size="13" fill="${C.lilac}">${esc(base)}</text>`;
+
+  const node = ([name, sub], cx, cy) => `
+  <rect x="${cx - 100}" y="${cy - 30}" width="200" height="60" rx="14" fill="${C.surface}" stroke="${C.line}"/>
+  <text x="${cx - 84}" y="${cy - 4}" font-family="${SANS}" font-size="15" font-weight="700" fill="${C.text}">${esc(name)}</text>
+  <text x="${cx - 84}" y="${cy + 15}" font-family="${MONO}" font-size="11" fill="${C.muted}">${esc(sub)}</text>`;
+
+  const flow = (d, begin) => `
+  <path d="${d}" fill="none" stroke="${C.line}" stroke-width="1.5"/>
+  <path d="${d}" fill="none" stroke="${C.purple}" stroke-opacity=".5" stroke-width="1.5" stroke-dasharray="3 9">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  <circle r="3" fill="${C.lilac}" opacity="0">
+    <animateMotion dur="1.8s" begin="${begin}s" repeatCount="indefinite" path="${d}"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" begin="${begin}s" repeatCount="indefinite"/>
+  </circle>`;
+
+  const leftY = left.map((_, i) => by + 70 + i * ((bh - 140) / Math.max(1, left.length - 1)));
+  const rightY = right.map((_, i) => by + 46 + i * ((bh - 92) / Math.max(1, right.length - 1)));
+  const edges = [
+    ...leftY.map((y, i) => flow(`M250 ${y}H${bx}`, i * 0.5)),
+    ...rightY.map((y, i) => flow(`M${bx + bw} ${y}H950`, 0.9 + i * 0.4)),
+  ].join("");
+
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc">
+  <title id="title">The stack behind it</title>
+  <desc id="desc">${esc(`A self-hosted VPS running ${services.map((s) => s[0]).join(", ")}. ${base}. Inputs: ${left.map((l) => l[0]).join(", ")}. Connected to ${right.map((r) => r[0]).join(", ")}.`)}</desc>
+  <defs>
+    ${ink("ink")}
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="${C.deep}" stop-opacity=".3"/>
+      <stop offset="1" stop-color="${C.deep}" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity=".05"/>
+    </pattern>
+    <clipPath id="card"><rect width="${W}" height="${H}" rx="18"/></clipPath>
+  </defs>
+  <style>
+    .s { animation: pop .5s cubic-bezier(.2,.7,.2,1) backwards; }
+    @keyframes pop { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <rect width="${W}" height="${H}" rx="18" fill="${C.bg}"/>
+  <g clip-path="url(#card)">
+    <rect width="${W}" height="${H}" fill="url(#dots)"/>
+    <circle cx="${bx + bw / 2}" cy="${by + bh / 2}" r="360" fill="url(#glow)"/>
+  </g>
+  <rect x=".75" y=".75" width="${W - 1.5}" height="${H - 1.5}" rx="17.25" fill="none" stroke="${C.line}" stroke-width="1.5"/>
+  <text x="32" y="46" font-family="${MONO}" font-size="13" fill="${C.dim}">// the stack behind it</text>
+  <text x="${W - 32}" y="46" text-anchor="end" font-family="${MONO}" font-size="13" fill="${C.dim}">one person · one VPS · no platform team</text>
+  ${edges}
+  <rect x="${bx}" y="${by}" width="${bw}" height="${bh}" rx="20" fill="${C.bg}" fill-opacity=".85"/>
+  <rect x="${bx}" y="${by}" width="${bw}" height="${bh}" rx="20" fill="none" stroke="${C.purple}" stroke-opacity=".55" stroke-width="1.5" stroke-dasharray="7 6">
+    <animate attributeName="stroke-dashoffset" from="0" to="-26" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="${bx + 30}" cy="${by + 32}" r="4" fill="${C.purple}">
+    <animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="${bx + 44}" y="${by + 37}" font-family="${MONO}" font-size="13" fill="${C.purple}">vps · digitalocean · 4 vCPU / 8 GB · docker compose</text>
+  ${chips}
+  ${baseSvg}
+  ${left.map((n, i) => node(n, 150, leftY[i])).join("")}
+  ${right.map((n, i) => node(n, 1050, rightY[i])).join("")}
+</svg>`;
+}
+
+// ---------------------------------------------------------------- method pillars
+function pillars(items) {
+  const W = 1200, H = 272, gap = 28, tw = (W - gap * (items.length - 1)) / items.length;
+  const tiles = items
+    .map(({ step, name, claim, signal }, i) => {
+      const x = i * (tw + gap);
+      const claimLines = wrap(claim, 28).slice(0, 3);
+      const sigLines = wrap(signal, 34).slice(0, 3);
+      const arrow =
+        i < items.length - 1
+          ? `
+  <g>
+    <circle cx="${x + tw + gap / 2}" cy="120" r="13" fill="${C.bg}" stroke="${C.purple}" stroke-width="1.5">
+      <animate attributeName="stroke-opacity" values=".25;1;.25" dur="3s" begin="${(i * 0.75).toFixed(2)}s" repeatCount="indefinite"/>
+    </circle>
+    <text x="${x + tw + gap / 2}" y="125" text-anchor="middle" font-family="${MONO}" font-size="14" fill="${C.purple}">→</text>
+  </g>`
+          : "";
+      return `
+  <g class="t" style="animation-delay:${(i * 0.12).toFixed(2)}s">
+    <rect x="${x + 0.75}" y="4" width="${tw - 1.5}" height="${H - 8}" rx="16" fill="${C.bg}" stroke="${C.line}" stroke-width="1.5"/>
+    <text x="${x + 24}" y="40" font-family="${MONO}" font-size="13" fill="${C.dim}">${esc(step)}</text>
+    <text x="${x + 22}" y="84" font-family="${SANS}" font-size="34" font-weight="800" letter-spacing="-1" fill="url(#ink)">${esc(name)}</text>
+    ${claimLines.map((l, j) => `<text x="${x + 24}" y="${116 + j * 21}" font-family="${SANS}" font-size="15.5" font-weight="500" fill="${C.soft}">${esc(l)}</text>`).join("\n    ")}
+    <text x="${x + 24}" y="${H - 84}" font-family="${MONO}" font-size="11" fill="${C.purple}">you'll know when:</text>
+    ${sigLines.map((l, j) => `<text x="${x + 24}" y="${H - 64 + j * 17}" font-family="${MONO}" font-size="11.5" fill="${C.muted}">${esc(l)}</text>`).join("\n    ")}
+  </g>${arrow}`;
+    })
+    .join("");
+
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc">
+  <title id="title">Method: ${esc(items.map((p) => p.name).join(", "))}</title>
+  <desc id="desc">${esc(items.map((p) => `${p.name}: ${p.claim}`).join(" "))}</desc>
+  <defs>${ink("ink")}</defs>
+  <style>
+    .t { animation: rise .7s cubic-bezier(.2,.7,.2,1) backwards; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  ${tiles}
+</svg>`;
+}
+
+// ---------------------------------------------------------------- CTA buttons
+function button({ label, sub, primary }) {
+  const W = 390, H = 78;
+  const fill = primary ? "url(#ink)" : C.bg;
+  const labelColor = primary ? C.bg : C.text;
+  const subColor = primary ? "#3B1566" : C.muted;
+  const arrowColor = primary ? C.bg : C.purple;
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${label}: ${sub}`)}">
+  <defs>
+    ${ink("ink")}
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="${primary ? ".45" : ".12"}"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="btn"><rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="15"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="15" fill="${fill}" stroke="${primary ? "none" : C.purple}" stroke-opacity=".7" stroke-width="1.5"/>
+  <g clip-path="url(#btn)">
+    <rect x="-140" y="0" width="120" height="${H}" fill="url(#sheen)" transform="skewX(-20)">
+      <animate attributeName="x" values="-140;${W + 60};${W + 60}" keyTimes="0;.45;1" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <text x="24" y="35" font-family="${SANS}" font-size="18" font-weight="700" fill="${labelColor}">${esc(label)}</text>
+  <text x="24" y="57" font-family="${MONO}" font-size="12" fill="${subColor}">${esc(sub)}</text>
+  <text x="${W - 44}" y="48" font-family="${SANS}" font-size="24" font-weight="700" fill="${arrowColor}">→
+    <animate attributeName="x" values="${W - 44};${W - 38};${W - 44}" dur="1.6s" repeatCount="indefinite"/>
+  </text>
+</svg>`;
+}
+
 // ---------------------------------------------------------------- data
 const STATS = [
   ["20+", "products shipped", "end to end"],
@@ -417,6 +637,66 @@ const CARDS = [
   },
 ];
 
+// Standing claims only. See knowledge/operational/lachlancb-brand-os.md → "Two proof sets".
+const NEOFETCH = [
+  ["Role", "Growth Operator"],
+  ["Host", "Chiang Mai, Thailand"],
+  ["Origin", "Australia"],
+  ["Uptime", "4 years in marketing"],
+  ["Shell", "Claude Code"],
+  ["Languages", "TypeScript, Python"],
+  ["Packages", "20+ products shipped"],
+  ["Clients", "10 across Thailand + Australia"],
+  ["Previously", "$300–400k/yr Amazon ads account"],
+  ["Method", "spec → architect → direct → verify"],
+  ["Open to", "AI + systems roles, founder-led teams"],
+];
+
+// Verified against the VPS on 2026-09-24. Client containers stay off this list.
+const STACK = {
+  services: [
+    ["Caddy", "cdn + tls"],
+    ["n8n", "workflows"],
+    ["LangGraph", "agent api"],
+    ["Postgres", "data"],
+    ["Redis", "queues + cache"],
+    ["Umami", "web analytics"],
+    ["Omi webhook", "voice capture"],
+    ["Dozzle", "live logs"],
+    ["Diun", "image updates"],
+  ],
+  base: "Claude Code, headless · 29 cron jobs",
+  left: [
+    ["phone", "telegram → claude code"],
+    ["webhooks", "forms, wearables, apps"],
+    ["cloudflare", "dns + email routing"],
+  ],
+  right: [
+    ["vercel", "next.js apps"],
+    ["neon + supabase", "app databases"],
+    ["anthropic api", "claude models"],
+    ["slack", "alerts + reports"],
+  ],
+};
+
+// Word for word from lachlancb.me/methodology (lib/methodology.ts in the site repo).
+const PILLARS = [
+  { step: "01", name: "Automate", claim: "The repeatable work comes off you and the team.", signal: "A week where the thing still happened and you were not involved in it." },
+  { step: "02", name: "See", claim: "You can finally tell which client makes money.", signal: "You change a decision because of a number, not despite one." },
+  { step: "03", name: "Amplify", claim: "The team you have handles more, and handles it better.", signal: "Throughput moves without headcount moving." },
+  { step: "04", name: "Scale", claim: "Growth that does not depend on you selling every deal.", signal: "Enquiries arrive in a week you did no selling." },
+];
+
+const BUTTONS = [
+  { file: "cta-cv", label: "Read the receipts", sub: "my CV, every claim with evidence", primary: true },
+  { file: "cta-audit", label: "Book a free Systems Audit", sub: "for agency owners · 60–90 min" },
+  { file: "cta-building", label: "See what I'm building", sub: "shipped, in progress, next" },
+];
+
 write("hero.svg", hero());
 write("stats.svg", stats(STATS));
 for (const c of CARDS) write(`cards/${c.file}.svg`, card(c));
+write("neofetch.svg", neofetch(NEOFETCH));
+write("stack.svg", stack(STACK));
+write("pillars.svg", pillars(PILLARS));
+for (const b of BUTTONS) write(`${b.file}.svg`, button(b));

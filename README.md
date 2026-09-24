@@ -2,7 +2,8 @@
   LachlanCB · GitHub profile README
   Palette (LachlanCB brand): #0A0A0B black · #FFFFFF text · #9CA3AF muted · #C084FC purple
   Everything in assets/ is generated: edit scripts/build.mjs, then run `node scripts/build.mjs`.
-  The snake lives on the `output` branch and is rebuilt by .github/workflows/snake.yml.
+  The snake lives on the `output` branch and is rebuilt by .github/workflows/profile.yml,
+  along with the activity card and the ~/writing list.
 -->
 
 <div align="center">
@@ -12,6 +13,7 @@
 <br /><br />
 
 <a href="https://lachlancb.me"><img src="https://img.shields.io/badge/site-lachlancb.me-7C3AED?style=for-the-badge&labelColor=0A0A0B&logo=googlechrome&logoColor=C084FC" alt="lachlancb.me" /></a>
+<a href="https://lachlancb.me/cv/"><img src="https://img.shields.io/badge/cv-the%20receipts-7C3AED?style=for-the-badge&labelColor=0A0A0B&logo=readdotcv&logoColor=C084FC" alt="CV: the receipts" /></a>
 <a href="https://www.linkedin.com/in/lachlan-coleman-barrett"><img src="https://img.shields.io/badge/linkedin-Lachlan%20Coleman--Barrett-7C3AED?style=for-the-badge&labelColor=0A0A0B&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0MwODRGQyIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYTIuMDYyIDIuMDYyIDAgMSAxIDAtNC4xMjUgMi4wNjIgMi4wNjIgMCAwIDEgMCA0LjEyNXpNNy4xMTkgMjAuNDUySDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+" alt="LinkedIn" /></a>
 <a href="https://www.youtube.com/@Lachlan-AI"><img src="https://img.shields.io/badge/youtube-@Lachlan--AI-7C3AED?style=for-the-badge&labelColor=0A0A0B&logo=youtube&logoColor=C084FC" alt="YouTube" /></a>
 
@@ -27,15 +29,7 @@ I build with Claude Code. I write the spec, design the architecture, direct the 
 
 Before the builds, I ran a $300–400k a year Amazon ads account. I still think in margins.
 
-```yaml
-title:     Growth Operator
-based_in:  Chiang Mai, Thailand (from Australia)
-builds:    [AI agents, automation systems, internal tools, client portals]
-method:    spec → architect → direct Claude Code → verify
-stack:     TypeScript · Next.js · Python · Supabase · Postgres · n8n · Docker
-runs:      17 self-hosted services · 29 cron jobs · one VPS
-open_to:   AI and systems roles at founder-led teams
-```
+<img src="assets/neofetch.svg" width="100%" alt="neofetch for lachy@chiangmai: Growth Operator, Chiang Mai, 4 years in marketing, Claude Code, TypeScript and Python, 20+ products shipped, 10 clients across Thailand and Australia, previously a $300–400k/yr Amazon ads account, open to AI and systems roles at founder-led teams" />
 
 <img src="assets/stats.svg" width="100%" alt="20+ products shipped end to end · 17 self-hosted services running in production · 29 scheduled jobs on cron · 1 operator, no engineering team" />
 
@@ -74,6 +68,36 @@ Most of what I build runs for clients or for me, so the code stays private. Here
 </p>
 
 **Also shipped:** a competitor SEO audit app · a wireframe brief generator · a [bio storefront on Stripe](https://stan.lachlancb.me) · a [creator revenue calculator](https://creator-calc-opsscale.vercel.app) · an [Omi transcription webhook](https://github.com/LachyAI/omi-transcript-webhook). More at **[lachlancb.me/apps](https://lachlancb.me/apps)**.
+
+<br />
+
+## `~/stack`
+
+Everything above runs on infrastructure I set up and run myself.
+
+<img src="assets/stack.svg" width="100%" alt="The stack behind it: a DigitalOcean VPS running Caddy, n8n, LangGraph, Postgres, Redis, Umami, an Omi webhook, Dozzle and Diun, with headless Claude Code and 29 cron jobs. Inputs from a phone via Telegram, webhooks and Cloudflare. Connected to Vercel, Neon and Supabase, the Anthropic API and Slack." />
+
+<br />
+
+## `~/method`
+
+Every build follows the same four steps, in this order. <a href="https://lachlancb.me/methodology/">Why the order matters →</a>
+
+<a href="https://lachlancb.me/methodology/"><img src="assets/pillars.svg" width="100%" alt="Method: 01 Automate, the repeatable work comes off you and the team. 02 See, you can finally tell which client makes money. 03 Amplify, the team you have handles more. 04 Scale, growth that does not depend on you selling every deal." /></a>
+
+<br />
+
+## `~/writing`
+
+Latest from [lachlancb.me](https://lachlancb.me). Refreshed automatically twice a day.
+
+<!-- WRITING:START -->
+- **[Your Skill Is Replaceable. Your Personal Brand Isn't.](https://lachlancb.me/personal-brand-between-you-and-ai/)** <sub>· 17 Aug 2026</sub>
+- **[AI Content Isn't Dying. Average Content Is.](https://lachlancb.me/ai-content-dying-platforms-what-wins-now/)** <sub>· 17 Aug 2026</sub>
+- **[Geographic Arbitrage Is the Best Raise You Never Got](https://lachlancb.me/geographic-arbitrage/)** <sub>· 8 Aug 2026</sub>
+- **[The Chiang Mai Border Run: Why the Websites Are Wrong](https://lachlancb.me/chiang-mai-border-run/)** <sub>· 7 Aug 2026</sub>
+- **[Where good information actually comes from](https://lachlancb.me/foundation-of-knowledge/)** <sub>· 24 Jul 2026</sub>
+<!-- WRITING:END -->
 
 <br />
 
@@ -119,7 +143,7 @@ Most of what I build runs for clients or for me, so the code stays private. Here
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com?user=LachyAI&background=0A0A0B&border=26262D&stroke=26262D&ring=C084FC&fire=C084FC&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=C084FC&sideLabels=9CA3AF&dates=6B7280&border_radius=16&date_format=M%20j%5B%2C%20Y%5D" width="70%" alt="Contribution streak" />
+<img src="https://raw.githubusercontent.com/LachyAI/LachyAI/output/activity.svg" width="100%" alt="Contribution activity over the last 12 months: totals, streaks and commits per week" />
 
 <br /><br />
 
@@ -128,6 +152,20 @@ Most of what I build runs for clients or for me, so the code stays private. Here
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/LachyAI/LachyAI/output/snake-light.svg" />
   <img src="https://raw.githubusercontent.com/LachyAI/LachyAI/output/snake-dark.svg" width="100%" alt="Contribution graph with a snake eating the commits" />
 </picture>
+
+</div>
+
+<br />
+
+## `~/next`
+
+<div align="center">
+
+<a href="https://lachlancb.me/cv/"><img src="assets/cta-cv.svg" width="32%" alt="Read the receipts: my CV, every claim with evidence" /></a>
+<a href="https://lachlancb.me/services/"><img src="assets/cta-audit.svg" width="32%" alt="Book a free Systems Audit, for agency owners" /></a>
+<a href="https://lachlancb.me/building/"><img src="assets/cta-building.svg" width="32%" alt="See what I'm building: shipped, in progress, next" /></a>
+
+<br /><br />
 
 <img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:0A0A0B,55:7C3AED,100:C084FC&animation=fadeIn" width="100%" alt="" />
 
