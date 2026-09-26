@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="312" viewBox="0 0 1200 312" role="img" aria-labelledby="title desc">
+  <title id="title">Contribution activity, last 12 months</title>
+  <desc id="desc">1,310 contributions, 118 active days, 7d current streak, 19d longest streak, 176 best week. Updated 2026-09-26.</desc>
+  <defs>
+    
+  <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#D8B4FE"/>
+    <stop offset=".55" stop-color="#C084FC"/>
+    <stop offset="1" stop-color="#7C3AED"/>
+  </linearGradient>
+    <linearGradient id="bar" gradientUnits="userSpaceOnUse" x1="0" y1="170" x2="0" y2="268">
+      <stop offset="0" stop-color="#D8B4FE"/>
+      <stop offset=".45" stop-color="#C084FC"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .b { transform-box: fill-box; transform-origin: 50% 100%; animation: grow .7s cubic-bezier(.2,.7,.2,1) backwards; }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  </style>
+  <rect width="1200" height="312" rx="18" fill="#0A0A0B"/>
+  <rect x=".75" y=".75" width="1198.5" height="310.5" rx="17.25" fill="none" stroke="#26262D" stroke-width="1.5"/>
+  <text x="40" y="48" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14" fill="#C084FC">~/activity</text>
+  <text x="1160" y="48" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="12" fill="#6B7280">contributions per week · last 12 months · updated 2026-09-26</text>
+  
+  <text x="40" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-1" fill="url(#ink)">1,310</text>
+  <text x="42" y="140" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">contributions</text>
+  <text x="264" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-1" fill="url(#ink)">118</text>
+  <text x="266" y="140" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">active days</text>
+  <text x="488" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-1" fill="url(#ink)">7d</text>
+  <text x="490" y="140" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">current streak</text>
+  <text x="712" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-1" fill="url(#ink)">19d</text>
+  <text x="714" y="140" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">longest streak</text>
+  <text x="936" y="116" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="40" font-weight="800" letter-spacing="-1" fill="url(#ink)">176</text>
+  <text x="938" y="140" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#9CA3AF">best week</text>
+  <rect class="b" style="animation-delay:0.000s" x="40.0" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.012s" x="61.2" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.024s" x="82.4" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.036s" x="103.6" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.048s" x="124.8" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.060s" x="146.0" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.072s" x="167.2" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.084s" x="188.5" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.096s" x="209.7" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.108s" x="230.9" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.120s" x="252.1" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.132s" x="273.3" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.144s" x="294.5" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.156s" x="315.7" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.168s" x="336.9" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.180s" x="358.1" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.192s" x="379.3" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.204s" x="400.5" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.216s" x="421.7" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.228s" x="442.9" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.240s" x="464.2" y="264.0" width="17.2" height="4.0" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.252s" x="485.4" y="260.8" width="17.2" height="7.2" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.264s" x="506.6" y="264.0" width="17.2" height="4.0" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.276s" x="527.8" y="259.1" width="17.2" height="8.9" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.288s" x="549.0" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.300s" x="570.2" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.312s" x="591.4" y="240.2" width="17.2" height="27.8" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.324s" x="612.6" y="264.0" width="17.2" height="4.0" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.336s" x="633.8" y="264.0" width="17.2" height="4.0" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.348s" x="655.0" y="264.0" width="17.2" height="4.0" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.360s" x="676.2" y="258.5" width="17.2" height="9.5" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.372s" x="697.4" y="261.9" width="17.2" height="6.1" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.384s" x="718.6" y="241.8" width="17.2" height="26.2" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.396s" x="739.8" y="265.0" width="17.2" height="3.0" rx="2.5" fill="#16161B"/>
+  <rect class="b" style="animation-delay:0.408s" x="761.1" y="255.8" width="17.2" height="12.3" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.420s" x="782.3" y="263.5" width="17.2" height="4.5" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.432s" x="803.5" y="245.7" width="17.2" height="22.3" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.444s" x="824.7" y="239.6" width="17.2" height="28.4" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.456s" x="845.9" y="192.3" width="17.2" height="75.7" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.468s" x="867.1" y="213.4" width="17.2" height="54.6" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.480s" x="888.3" y="248.5" width="17.2" height="19.5" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.492s" x="909.5" y="260.2" width="17.2" height="7.8" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.504s" x="930.7" y="262.4" width="17.2" height="5.6" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.516s" x="951.9" y="263.0" width="17.2" height="5.0" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.528s" x="973.1" y="240.2" width="17.2" height="27.8" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.540s" x="994.3" y="228.5" width="17.2" height="39.5" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.552s" x="1015.5" y="240.7" width="17.2" height="27.3" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.564s" x="1036.8" y="229.0" width="17.2" height="39.0" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.576s" x="1058.0" y="246.8" width="17.2" height="21.2" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.588s" x="1079.2" y="186.7" width="17.2" height="81.3" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.600s" x="1100.4" y="220.1" width="17.2" height="47.9" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.612s" x="1121.6" y="249.6" width="17.2" height="18.4" rx="2.5" fill="url(#bar)"/>
+  <rect class="b" style="animation-delay:0.624s" x="1142.8" y="170.0" width="17.2" height="98.0" rx="2.5" fill="url(#bar)"/>
+  <text x="82.4" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Oct</text><text x="167.2" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Nov</text><text x="273.3" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Dec</text><text x="358.1" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Jan</text><text x="442.9" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Feb</text><text x="527.8" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Mar</text><text x="633.8" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Apr</text><text x="718.6" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">May</text><text x="824.7" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Jun</text><text x="909.5" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Jul</text><text x="994.3" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Aug</text><text x="1100.4" y="290" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="11" fill="#6B7280">Sep</text>
+</svg>
