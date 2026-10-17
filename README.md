@@ -92,11 +92,11 @@ Every build follows the same four steps, in this order. <a href="https://lachlan
 Latest from [lachlancb.me](https://lachlancb.me). Refreshed automatically twice a day.
 
 <!-- WRITING:START -->
+- **[Claude Cowork vs Claude Code: Which One Should You Actually Use?](https://lachlancb.me/claude-cowork-vs-claude-code/)** <sub>· 17 Oct 2026</sub>
 - **[How to Scale a Digital Marketing Agency Without Hiring](https://lachlancb.me/how-to-scale-a-digital-marketing-agency/)** <sub>· 28 Sep 2026</sub>
 - **[Your Skill Is Replaceable. Your Personal Brand Isn't.](https://lachlancb.me/personal-brand-between-you-and-ai/)** <sub>· 17 Aug 2026</sub>
 - **[AI Content Isn't Dying. Average Content Is.](https://lachlancb.me/ai-content-dying-platforms-what-wins-now/)** <sub>· 17 Aug 2026</sub>
 - **[Geographic Arbitrage Is the Best Raise You Never Got](https://lachlancb.me/geographic-arbitrage/)** <sub>· 8 Aug 2026</sub>
-- **[The Chiang Mai Border Run: Why the Websites Are Wrong](https://lachlancb.me/chiang-mai-border-run/)** <sub>· 7 Aug 2026</sub>
 <!-- WRITING:END -->
 
 <br />
