@@ -63,18 +63,24 @@ function hero() {
   const widths = phrases.map((p) => p.length * cw + 2);
   const anim = (pts) => `values="${pts.map((p) => p[1]).join(";")}" keyTimes="${pts.map((p) => kt(p[0])).join(";")}"`;
 
+  // One <text> per character with a discrete opacity step, timed to the cursor.
+  // WebKit (iOS Safari, GitHub mobile) ignores animated clipPath widths and drew
+  // every phrase stacked on top of each other.
   const typed = phrases
     .map((p, i) => {
       const s = i * slot;
       const w = widths[i];
-      const pts = [[s, 0], [s + 1, w], [s + 2.4, w], [s + 2.8, 0], [T, 0]];
-      if (s > 0) pts.unshift([0, 0]);
-      // Without SMIL the first phrase shows in full and the rest stay hidden.
-      return `
-    <clipPath id="cp${i}"><rect x="${px}" y="296" height="30" width="${i === 0 ? w : 0}">
-      <animate attributeName="width" dur="${T}s" repeatCount="indefinite" ${anim(pts)}/>
-    </rect></clipPath>
-    <text x="${px}" y="318" clip-path="url(#cp${i})" textLength="${p.length * cw}" font-family="${MONO}" font-size="20" fill="${C.purple}">${esc(p)}</text>`;
+      return [...p]
+        .map((ch, j) => {
+          if (ch === " ") return "";
+          const edge = ((j + 1) * cw) / w;
+          const on = kt(s + edge);
+          const off = kt(s + 2.4 + 0.4 * (1 - edge));
+          // Without SMIL the first phrase shows in full and the rest stay hidden.
+          return `
+    <text x="${px + j * cw}" y="318" opacity="${i === 0 ? 1 : 0}" font-family="${MONO}" font-size="20" fill="${C.purple}">${esc(ch)}<animate attributeName="opacity" calcMode="discrete" values="0;1;0;0" keyTimes="0;${on};${off};1" dur="${T}s" repeatCount="indefinite"/></text>`;
+        })
+        .join("");
     })
     .join("");
 
@@ -189,7 +195,7 @@ function hero() {
   <text x="${x0}" y="222" font-family="${MONO}" font-size="15" letter-spacing="5" fill="${C.purple}">GROWTH OPERATOR</text>
   <text x="${x0}" y="264" font-family="${SANS}" font-size="26" font-weight="500" fill="${C.soft}">I build the systems a business runs on.</text>
 
-  <text x="${x0}" y="318" textLength="${10 * cw}" font-family="${MONO}" font-size="20"><tspan fill="${C.dim}">&gt; </tspan><tspan fill="${C.muted}">shipping</tspan></text>
+  <text x="${Array.from({ length: 10 }, (_, j) => x0 + j * cw).join(" ")}" y="318" font-family="${MONO}" font-size="20"><tspan fill="${C.dim}">&gt; </tspan><tspan fill="${C.muted}">shipping</tspan></text>
   ${typed}
   <rect x="${px + widths[0] + 2}" y="301" width="11" height="22" rx="1.5" fill="${C.purple}">
     <animate attributeName="x" dur="${T}s" repeatCount="indefinite" ${anim(cursorPts)}/>
